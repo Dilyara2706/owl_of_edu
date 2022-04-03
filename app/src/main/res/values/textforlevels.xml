@@ -21,4 +21,25 @@
     <string name="lvl2text9">Nine</string>
     <string name="lvl2text10">Ten</string>
 
+    <string name="lvl3text1">Аксолотль</string>
+    <string name="lvl3text2">Барханный кот</string>
+    <string name="lvl3text3">Домашняя лиса</string>
+    <string name="lvl3text4">Енот</string>
+    <string name="lvl3text5">Ёж</string>
+    <string name="lvl3text6">Коала</string>
+    <string name="lvl3text7">Фенек</string>
+    <string name="lvl3text8">Летучая мышь</string>
+    <string name="lvl3text9">Генетта</string>
+    <string name="lvl3text10">Одомашенный лис</string>
+    <string name="lvl3text11">Капибара</string>
+    <string name="lvl3text12">Красная панда</string>
+    <string name="lvl3text13">Кинкажу</string>
+    <string name="lvl3text14">Белая сова</string>
+    <string name="lvl3text15">Сахарная сумчатая летяга</string>
+    <string name="lvl3text16">Тушканчик</string>
+    <string name="lvl3text17">Флоридский рак</string>
+    <string name="lvl3text18">Сурикат</string>
+    <string name="lvl3text19">Скунс</string>
+    <string name="lvl3text20">Жаба-ага</string>
+
 </resources>

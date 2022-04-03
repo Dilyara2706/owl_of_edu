@@ -56,4 +56,57 @@ public class Array {
 
     };
 
+    //массив для 3 ур
+    final int[] images3= {
+            R.drawable.enaksol,
+            R.drawable.incat,
+            R.drawable.endomlis,
+            R.drawable.inenot,
+            R.drawable.enez,
+            R.drawable.inkoala,
+            R.drawable.enfenek,
+            R.drawable.inmysh,
+            R.drawable.engeneta,
+            R.drawable.inodomlis,
+            R.drawable.enkapibara,
+            R.drawable.inpandared,
+            R.drawable.enkinkazy,
+            R.drawable.insova,
+            R.drawable.enletyaga,
+            R.drawable.intyshkan,
+            R.drawable.enrak,
+            R.drawable.inyrikat,
+            R.drawable.enskyns,
+            R.drawable.inzaba
+    };
+
+
+    final int[] text3 = {
+            R.string.lvl3text1,
+            R.string.lvl3text2,
+            R.string.lvl3text3,
+            R.string.lvl3text4,
+            R.string.lvl3text5,
+            R.string.lvl3text6,
+            R.string.lvl3text7,
+            R.string.lvl3text8,
+            R.string.lvl3text9,
+            R.string.lvl3text10,
+            R.string.lvl3text11,
+            R.string.lvl3text12,
+            R.string.lvl3text13,
+            R.string.lvl3text14,
+            R.string.lvl3text15,
+            R.string.lvl3text16,
+            R.string.lvl3text17,
+            R.string.lvl3text18,
+            R.string.lvl3text19,
+            R.string.lvl3text20
+
+    };
+
+    final int[] strong = {
+         1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,
+    };
+
 }

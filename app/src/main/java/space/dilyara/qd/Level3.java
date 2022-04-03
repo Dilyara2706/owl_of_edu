@@ -38,7 +38,7 @@ public class Level3 extends AppCompatActivity {
         setContentView(R.layout.universal);
 
         TextView text_levels=findViewById(R.id.text_levels);
-        text_levels.setText(R.string.level1);
+        text_levels.setText(R.string.level3);
 
         final ImageView img_left=(ImageView)findViewById(R.id.img_left);
         img_left.setClipToOutline(true);
@@ -132,7 +132,7 @@ public class Level3 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 try {
-                    Intent intent=new Intent(Level3.this, Level3.class);
+                    Intent intent=new Intent(Level3.this, Level4.class);
                     startActivity(intent);
                     finish();
                 }catch (Exception e){
@@ -171,17 +171,17 @@ public class Level3 extends AppCompatActivity {
 
         final Animation a= AnimationUtils.loadAnimation(Level3.this,R.anim.alpha);
 
-        numLeft=random.nextInt(10);
-        img_left.setImageResource(array.images2[numLeft]);
-         text_left.setText(array.text2[numLeft]);
+        numLeft=random.nextInt(20);
+        img_left.setImageResource(array.images3[numLeft]);
+         text_left.setText(array.text3[numLeft]);
 
-         numRight=random.nextInt(10);
-         while (numLeft==numRight){
-             numRight= random.nextInt(10);
+         numRight=random.nextInt(20);
+         while (array.strong[numLeft]==array.strong[numRight]){
+             numRight= random.nextInt(20);
          }
 
-         img_right.setImageResource(array.images2[numRight]);
-        text_right.setText(array.text2[numRight]);
+         img_right.setImageResource(array.images3[numRight]);
+        text_right.setText(array.text3[numRight]);
 
 
         img_left.setOnTouchListener(new View.OnTouchListener() {
@@ -190,7 +190,7 @@ public class Level3 extends AppCompatActivity {
                 if (event.getAction() == MotionEvent.ACTION_DOWN) {
 
                     img_right.setEnabled(false);
-                    if (numLeft>numRight){
+                    if (array.strong[numLeft]>array.strong[numRight]){
                         img_left.setImageResource(R.drawable.prav);
                     }else{
                         img_left.setImageResource(R.drawable.loj);
@@ -199,7 +199,7 @@ public class Level3 extends AppCompatActivity {
                 }else if (event.getAction() == MotionEvent.ACTION_UP){
 
 
-                    if (numLeft>numRight){
+                    if (array.strong[numLeft]>array.strong[numRight]){
                         if (count<20){
                             count=count+1;
                         }
@@ -239,19 +239,17 @@ public class Level3 extends AppCompatActivity {
                         dialogEnd.show();
 
                     }else {
-                        numLeft=random.nextInt(9);
-                        img_left.setImageResource(array.images2[numLeft]);
-                        img_left.startAnimation(a);
-                        text_left.setText(array.text2[numLeft]);
+                        numLeft=random.nextInt(20);
+                        img_left.setImageResource(array.images3[numLeft]);
+                        text_left.setText(array.text3[numLeft]);
 
-                        numRight=random.nextInt(9);
-                        while (numLeft==numRight){
-                            numRight= random.nextInt(9);
+                        numRight=random.nextInt(20);
+                        while (array.strong[numLeft]==array.strong[numRight]){
+                            numRight= random.nextInt(20);
                         }
 
-                        img_right.setImageResource(array.images2[numRight]);
-                        img_right.startAnimation(a);
-                        text_right.setText(array.text2[numRight]);
+                        img_right.setImageResource(array.images3[numRight]);
+                        text_right.setText(array.text3[numRight]);
 
                         img_right.setEnabled(true);
                     }
@@ -268,7 +266,7 @@ public class Level3 extends AppCompatActivity {
                 if (event.getAction() == MotionEvent.ACTION_DOWN) {
 
                     img_left.setEnabled(false);
-                    if (numLeft<numRight){
+                    if (array.strong[numLeft]<array.strong[numRight]){
                         img_right.setImageResource(R.drawable.prav);
                     }else{
                         img_right.setImageResource(R.drawable.loj);
@@ -277,7 +275,7 @@ public class Level3 extends AppCompatActivity {
                 }else if (event.getAction() == MotionEvent.ACTION_UP){
 
 
-                    if (numLeft<numRight){
+                    if (array.strong[numLeft]<array.strong[numRight]){
                         if (count<20){
                             count=count+1;
                         }
@@ -317,19 +315,17 @@ public class Level3 extends AppCompatActivity {
                         dialogEnd.show();
 
                     }else {
-                        numLeft=random.nextInt(9);
-                        img_left.setImageResource(array.images2[numLeft]);
-                        img_left.startAnimation(a);
-                        text_left.setText(array.text2[numLeft]);
+                        numLeft=random.nextInt(20);
+                        img_left.setImageResource(array.images3[numLeft]);
+                        text_left.setText(array.text3[numLeft]);
 
-                        numRight=random.nextInt(9);
-                        while (numLeft==numRight){
-                            numRight= random.nextInt(9);
+                        numRight=random.nextInt(20);
+                        while (array.strong[numLeft]==array.strong[numRight]){
+                            numRight= random.nextInt(20);
                         }
 
-                        img_right.setImageResource(array.images2[numRight]);
-                        img_right.startAnimation(a);
-                        text_right.setText(array.text2[numRight]);
+                        img_right.setImageResource(array.images3[numRight]);
+                        text_right.setText(array.text3[numRight]);
 
                         img_left.setEnabled(true);
                     }

@@ -38,7 +38,7 @@ public class Level2 extends AppCompatActivity {
         setContentView(R.layout.universal);
 
         TextView text_levels=findViewById(R.id.text_levels);
-        text_levels.setText(R.string.level1);
+        text_levels.setText(R.string.level2);
 
         final ImageView img_left=(ImageView)findViewById(R.id.img_left);
         img_left.setClipToOutline(true);
